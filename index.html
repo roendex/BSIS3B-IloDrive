@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IloDrive</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://kit.fontawesome.com/94f50dcabe.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-       <div class="main">
-        <div class="navbar">
-            <h2 class="logo">IloDrive</h2>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms & Condition</a></li>
-                <li><a href="#">More</a></li>
-            </ul>
-        </div>
-        <div class="search-box">
-            <input class="seach-txt" type="text" name="" placeholder="Type to search">
-            <a class="search-btn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-        </div>
-        <div class="title">
-            <h1>SakyakoGha:</h1>
-            <h3>YOUR RIDES AWAIT</h3>
-        </div>
-        <div class="button">
-            <a href="#" class="btn">RENT A CAR NOW</a>
-        </div>
-        <div class="button2">
-            <a href="#" class="btn">CREATE AN ACCOUNT</a>
-        </div>
-        
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
 
-        <div class="cars">
-            <span class="car1">
-                <img class="Rush1" style="width: 626px; height: 346px" src="images/rush.png" />
-            </span>
-            <span class="car2">
-                <img class="Vios1" style="width: 499px; height: 295px" src="images/vios.png" />
-            </span>
-            <span class="car3">
-                <img class="Xpander1" style="width: 694px; height: 360px" src="images/xpander.png" />
-            </span>
-        </div>
-        </div>
+<header>
+  
+  <nav>
+    <a href=""><img src="your-logo.png" alt="Your Logo"></a>
+    <a href="index.html" class="active">HOME</a>
+    <div class="dropdown">
+      <a href="#"><span style="display: flex;">CATEGORY <img class="arrow-down" src="./assets/images/down-arrow-svgrepo-com.png" alt=""></span></a>
+      <div class="dropdown-content">
+        <a href="suv.html">Suv</a>
+        <a href="pick up.html">Pick Up</a>
+        <a href="van.html">Van</a>
+      </div>
+    </div>
 
-       </div>
-    </body>
+    <a href="about.html">ABOUT US</a>
+    <a href="terms_condition.html">TERMS & CONDITION</a>
+    <div class="dropdown">
+      <a href="#"><span style="display: flex;">MORE <img class="arrow-down" src="./assets/images/down-arrow-svgrepo-com.png" alt=""></span></a>
+      <div class="dropdown-content">
+        <a href="contact.html">Contact Us</a>
+        <a href="customer_support.html">Customer Support</a>
+        <a href="index.html">Logout</a>
+
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+    <div class="banner">
+        <h1 class="banner-title">Ilo Drive:</h1>
+        <h1 class="banner-sub-title">YOUR RIDES AWAIT</h1>
+        <div class="banner-button-container">
+            <a class="banner-button" href="login.html">
+                <span style="display: flex;">
+                    <span class="banner-button-text">RENT A CAR</span>
+                    <img class="banner-button-arrow" src="./assets/images/arrow-right-svgrepo-com.png" alt="">
+                </span>
+              </a>
+        </div>
+        <div style="display: flex;">
+            <img class="car1 car" src="./assets/images/rush.png" alt="">
+            
+            <img class="car3 car" src="./assets/images/xpander.png" alt="">
+            <img class="car2 car" src="./assets/images/vios.png" alt="">
+        </div>
+    </div>
+    <div style="display: flex; justify-content: end; width: 80%; margin: 0 auto; margin-top: -30px;">
+        <a style="color: white; text-decoration: none; border-bottom: 1px solid red;" href="register.html">CREATE ACCOUNT</a>
+    </div>
+</main>
+
+</body>
 </html>
