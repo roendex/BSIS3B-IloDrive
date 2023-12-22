@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <!-- <a href=""><img src="your-logo.png" alt="Your Logo"></a> -->
+      <a href="index.html">HOME</a>
+      <div class="dropdown">
+        <a href="#"><span style="display: flex;">CATEGORY <img class="arrow-down"
+              src="./assets/images/down-arrow-svgrepo-com.png" alt=""></span></a>
+        <div class="dropdown-content">
+          <a href="suv.html">Suv</a>
+          <a href="pick up.html">Pick Up</a>
+          <a href="van.html">Van</a>
+        </div>
+      </div>
+      <a href="about.html">ABOUT US</a>
+      <a href="terms_condition.html">TERMS & CONDITION</a>
+      <div class="dropdown">
+        <a href="#"><span style="display: flex;">MORE <img class="arrow-down"
+              src="./assets/images/down-arrow-svgrepo-com.png" alt=""></span></a>
+        <div class="dropdown-content">
+          <a href="contact.html">Contact Us</a>
+          <a href="customer_support.html">Customer Support</a>
+          <a href="index.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="banner">
+      <div style="display: flex; position: absolute; top: 400px; left: 0px; z-index: 10;">
+        <!-- Your car images here -->
+      </div>
+      <form id="signupForm">
+        <div class="register-container">
+          <p class="title">REGISTER AN ACCOUNT</p>
+          <div class="register-row">
+            <div class="register-input">
+              <div class="register-wrapper">
+                <input type="text" class="form-control" id="fullname" placeholder="FULLNAME">
+                <span id="fullnameError" class="text-danger d-none"></span>
+              </div>
+            </div>
+            <div class="register-input">
+              <div class="register-wrapper">
+                <input type="password" class="form-control" id="password" placeholder="PASSWORD">
+                <span id="passwordError" class="text-danger d-none"></span>
+              </div>
+            </div>
+            <div class="register-input">
+              <div class="register-wrapper">
+                <input type="number" class="form-control" id="license" placeholder="LICENSED ID">
+                <span id="licenseError" class="text-danger d-none"></span>
+              </div>
+            </div>
+            <div class="register-input">
+              <div class="register-wrapper">
+                <input type="number" class="form-control" id="contact" placeholder="CONTACT #">
+                <span id="contactError" class="text-danger d-none"></span>
+              </div>
+            </div>
+          </div>
+          <div class="register-button-container">
+            <button class="btn btn-primary w-100 py-2" type="submit">Sign up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+  
+  <script type="module" src="assets/js/register.js"></script>
+
+
+</body>
+
+</html>
