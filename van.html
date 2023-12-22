@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <a href=""><img src="your-logo.png" alt="Your Logo"></a>
+            <a href="index.html">HOME</a>
+            <div class="dropdown">
+                <a href="#"><span style="display: flex;">CATEGORY <img class="arrow-down"
+                            src="./assets/images/down-arrow-svgrepo-com.png" alt=""></span></a>
+                <div class="dropdown-content">
+                    <a href="suv.html">Suv</a>
+                    <a href="pick up.html">Pick Up</a>
+                    <a href="van.html">Van</a>
+                </div>
+            </div>
+            <a href="about.html">ABOUT US</a>
+            <a href="terms_condition.html">TERMS & CONDITION</a>
+            <div class="dropdown">
+                <a href="#"><span style="display: flex;">MORE <img class="arrow-down"
+                            src="./assets/images/down-arrow-svgrepo-com.png" alt=""></span></a>
+                <div class="dropdown-content">
+                    <a href="contact.html">Contact Us</a>
+                    <a href="customer_support.html">Customer Support</a>
+                    <a href="index.html">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="suv-banner">
+            <h1 class="suv-banner-sub-title">VAN </h1>
+            <div class="cars-shuta">
+                <div class="car-wrapper" id="rush-wrapper">
+                    <div class="car-wrapper-inner">
+                        <img class="suv-car rush" src="./assets/images/van.png" alt="">
+                        <div class="specs-wrapper">
+                            <h1>Hi ace</h1>
+                            <h1>■ Automatic</h1>
+                            <h1>■ 10-12 Seaters</h1>
+                            <h2>Available</h2>
+                            <div class="green-button-wrapper">
+                                <button class="green-button" onclick="bookRush()"><span>Book Now</span></button>
+                            </div>
+                            <h3>$4,000 per day</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-wrapper" id="xpander-wrapper">
+                    <div class="car-wrapper-inner">
+                        <img class="suv-car xpander" src="./assets/images/grandia.png" alt="">
+                        <div class="specs-wrapper">
+                            <h1>Super Grandia</h1>
+                            <h1>■ Automatic</h1>
+                            <h1>■ 10-12 Seaters</h1>
+                            <h2>Unavailable</h2>
+                            <div class="green-button-wrapper">
+                                <button class="green-button" onclick="reserveXpander()"><span>Reserve
+                                        Now</span></button>
+                            </div>
+                            <h3>$4,500 per day</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            function reserveXpander() {
+                document.getElementById("xpander-wrapper").innerHTML =
+                    `
+            <div class="reserve-car-wrapper">
+                    <div class="form-control">
+                        <div class="title">
+                            Mode of payment:
+                        </div>
+                        <div class="input custom-select">
+                            <select name="format" id="format">
+                                <option selected disabled></option>
+                                <option value="">E-wallet</option>
+                                <option value="">Credit/Debit Card</option>
+                                <option value="">Cash on hand</option>
+                            </select>
+                        </div>
+                        <div class="others">
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <div class="title">
+                            Days of rent:
+                        </div>
+                        <div class="input">
+                            <input type="text">
+                        </div>
+                        <div class="others">
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <div class="title">
+                            Date:
+                        </div>
+                        <div class="input">
+                            <input type="text">
+                        </div>
+                        <div class="others">
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <span class="title">Mode of payment:</span>
+                        <span class="input"><input type="text"></span>
+                        <span class="others">
+  
+                        </span>
+                    </div>
+                    <span class="green-button-wrapper">
+                        <button class="green-button" style="margin-top: 30px;" onclick="closeReserveXpander()"><span>Confirm</span></button>
+                    </span>
+                    <span class="terms-condition">
+                        <span><input type="checkbox">I agree with the terms and conditions</span>
+                    </span>
+                    <span class="terms-condition">
+                        <span>NOTE: Before you confirm make sure you have read the terms and conditions.</span>
+                    </span>
+                </div>
+            </div>
+            `
+            }
+            function closeReserveXpander() {
+                window.location.href = 'thankyou.html';
+            }
+
+            function bookRush() {
+                document.getElementById("rush-wrapper").innerHTML =
+                    `
+            <div class="reserve-car-wrapper">
+                    <div class="form-control">
+                        <div class="title">
+                            Mode of payment:
+                        </div>
+                        <div class="input custom-select">
+                            <select name="format" id="format">
+                                <option selected disabled></option>
+                                <option value="">E-wallet</option>
+                                <option value="">Credit/Debit Card</option>
+                                <option value="">Cash on hand</option>
+                            </select>
+                        </div>
+                        <div class="others">
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <div class="title">
+                            Days of rent:
+                        </div>
+                        <div class="input">
+                            <input type="text">
+                        </div>
+                        <div class="others">
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <div class="title">
+                            Date:
+                        </div>
+                        <div class="input">
+                            <input type="text">
+                        </div>
+                        <div class="others">
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <span class="title">Mode of payment:</span>
+                        <span class="input"><input type="text"></span>
+                        <span class="others">
+   
+                        </span>
+                    </div>
+                    <span class="green-button-wrapper">
+                        <button class="green-button" style="margin-top: 30px;" onclick="closeReserveXpander()"><span>Confirm</span></button>
+                    </span>
+                    <span class="terms-condition">
+                        <span><input type="checkbox">I agree with the terms and conditions</span>
+                    </span>
+                    <span class="terms-condition">
+                        <span>NOTE: Before you confirm make sure you have read the terms and conditions.</span>
+                    </span>
+                </div>
+            </div>
+            `
+            }
+            function closeBookRush() {
+                window.location.href = 'thankyou.html';
+            }
+        </script>
+    </main>
+
+</body>
+
+</html>
